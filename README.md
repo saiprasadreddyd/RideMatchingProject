@@ -28,45 +28,46 @@ Docker: For containerized deployment of Kafka, ZooKeeper, and PostgreSQL.
 **Setup Instructions**
 
 1. Prerequisites
-Install Docker and Docker Compose.
-Install Python 3.10+.
-Install Git.
+      Install Docker and Docker Compose.
+      Install Python 3.10+.
+      Install Git.
 
 2. Clone the Repository
-git clone https://github.com/saiprasadreddyd/RideMatchingProject.git
+   
+      git clone https://github.com/saiprasadreddyd/RideMatchingProject.git
 
-cd RideMatchingProject
+      cd RideMatchingProject
 
 3. Install Python Dependencies
-Create a virtual environment and install the required libraries:
+      Create a virtual environment and install the required libraries:
 
-python -m venv venv
+      python -m venv venv
 
-source venv/bin/activate    # On Windows: venv\Scripts\activate
+      source venv/bin/activate    # On Windows: venv\Scripts\activate
 
-pip install -r requirements.txt
+      pip install -r requirements.txt
 
 4. Start Services with Docker
    
-Use Docker Compose to start ZooKeeper, Kafka, and PostgreSQL:
-docker-compose up -d
+      Use Docker Compose to start ZooKeeper, Kafka, and PostgreSQL:
+      docker-compose up -d
 
-Verify:
-Kafka: Running on localhost:9092.
+   Verify:
+      Kafka: Running on localhost:9092.
 
-PostgreSQL: Accessible on localhost:5432 (user: postgres, password: password123).
+      PostgreSQL: Accessible on localhost:5432 (user: postgres, password: password123).
 
 5. Run Python Scripts
 
-Run the Python scripts in separate terminals:
+      Run the Python scripts in separate terminals:
 
-python driver_producer.py
+      python driver_producer.py
 
-python rider_producer.py
+      python rider_producer.py
 
-python ride_matching_service.py
+      python ride_matching_service.py
 
-python ride_matching_consumer.py
+      python ride_matching_consumer.py
 
 **How It Works**
 
