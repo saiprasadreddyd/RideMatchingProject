@@ -1,8 +1,10 @@
 **Ride Matching Project**
+
 This project implements a ride-matching system using Apache Kafka, PostgreSQL, and Python. The system consists of producers and consumers for simulating drivers, riders,
 and ride-matching services, all while utilizing a robust Kafka-based architecture.
 
 **Features**
+
 Driver Producer: Simulates driver location updates.
 Rider Producer: Simulates ride requests from riders.
 Ride Matching Service: Matches riders to nearby drivers.
@@ -10,12 +12,14 @@ Database Integration: PostgreSQL for persisting ride-related data.
 Logging: Provides detailed logs for debugging and monitoring.
 
 **Technologies Used**
+
 Apache Kafka: For messaging and streaming data.
 PostgreSQL: As the database for persisting driver and rider information.
 Python: For implementing producers, consumers, and the ride-matching service.
 Docker: For containerized deployment of Kafka, ZooKeeper, and PostgreSQL.
 
 **Setup Instructions**
+
 1. Prerequisites
 Install Docker and Docker Compose.
 Install Python 3.10+.
